@@ -1,0 +1,196 @@
+/* frontend/src/styles/ManageTasks.css */
+
+.manage-tasks-component {
+  margin-top: 4rem;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+table th, table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+table td {
+  font-size: 1rem;
+  color: #333;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #333; /* Dark background for buttons */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background-color: #444; /* Slightly lighter gray on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc; /* Lighter gray for input borders */
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+select {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+}
+
+input::placeholder {
+    color: #aaa; /* Light placeholder text */
+}
+
+/* Editable fields styles */
+.editable-cell input {
+    background-color: #f9f9f9; /* Light background for editable fields */
+}
+
+.editable-cell {
+    padding: 0;
+}
+
+button.cancel {
+    background-color: #ccc; /* Light gray for cancel button */
+}
+
+button.cancel:hover {
+    background-color: #bbb; /* Darker gray on hover */
+}
+
+
+/* Existing styles remain the same */
+
+.status-toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status-badge.pending {
+  background-color: #FFF3CD;
+  color: #856404;
+}
+
+.status-badge.completed {
+  background-color: #D4EDDA;
+  color: #155724;
+}
+
+/* Toggle Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* status filter styles */
+
+.status-filter {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7rem;
+  align-items: center;
+  gap: 1rem;
+}
+

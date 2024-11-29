@@ -1,0 +1,103 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap');
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 3rem; /* Reduced padding for a more compact look */
+  background: linear-gradient(135deg, #2e343b, #1b2428); /* Dark gradient */
+  color: #f0f0f0; /* Light gray text for contrast */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow for smooth floating effect */
+  transition: all 0.3s ease;
+}
+
+/* Navbar container hover effect */
+.navbar:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow on hover */
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 2rem; /* Slightly smaller for balance */
+  font-weight: 500;
+  color: #f0f0f0; /* Muted white */
+  letter-spacing: 1.5px; /* Slight spacing for a sharp, clean look */
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif; /* Bold and clean logo font */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05); /* Subtle scale effect on hover */
+  color: #e57373; /* Coral red on hover */
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem; /* Reduced gap for a more compact design */
+  align-items: center;
+  font-weight: 400; /* Lighter weight for a sleek look */
+  font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+}
+
+/* Navbar link style */
+.navbar-links a {
+  color: #f0f0f0; /* Light gray for links */
+  text-decoration: none;
+  font-size: 1rem; /* Smaller font size for a cleaner look */
+  font-weight: 400; /* Lighter weight */
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.2s ease;
+  padding-bottom: 2px; /* Slight padding for smooth hover effect */
+}
+
+/* Navbar link hover effect */
+.navbar-links a:hover {
+  color: #e57373; /* Coral red on hover */
+  transform: translateY(-2px); /* Smooth hover lift effect */
+}
+
+/* Underline effect on hover */
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e57373; /* Coral red underline */
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.navbar-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 2rem; /* Reduced padding for mobile */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .navbar-links a {
+    font-size: 1.1rem; /* Slightly larger text for mobile */
+  }
+}
