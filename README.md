@@ -18,10 +18,9 @@ This is a task management application built with **React** on the frontend and *
 2. [Usage](#usage)
 3. [Backend Setup](#backend-setup)
 4. [Frontend Setup](#frontend-setup)
-5. [Optional Demo Video](#optional-demo-video)
-6. [Technologies Used](#technologies-used)
-7. [Contributing](#contributing)
-8. [License](#license)
+5. [Technologies Used](#technologies-used)
+6. [Contributing](#contributing)
+7. [License](#license)
 
 ---
 
@@ -84,7 +83,7 @@ You can:
    API Calls: Axios for interacting with the backend API
 
 
-### **Contributing**
+#### **6. Contributing**
    Fork the repository.
    Create a new branch:
    
@@ -98,7 +97,7 @@ You can:
    Open a Pull Request.
 
    
-### **License**
+#### **7. License**
    This project is licensed under the MIT License - see the LICENSE file for details.
 
 This README.md provides a comprehensive guide on setting up the project and understanding its features. You can also optionally include a demo video to showcase the app’s functionality.
