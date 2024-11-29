@@ -30,26 +30,21 @@ Follow these steps to set up the project locally.
 
 #### **1. Clone the Repository**
 
-git clone https://github.com/ojasbhosale/Task-Management-System.git
-cd task-management-app
-Backend Setup
-The backend is built using Node.js and SQLite.
+- git clone https://github.com/ojasbhosale/Task-Management-System.git
+- cd task-management-app
+- Backend Setup
+- The backend is built using Node.js and SQLite.
 
-1. Navigate to the Backend Folder 
-bash
-
-2. Install Dependencies
-Install the necessary dependencies using npm:
-
-
-npm install
+1. Navigate to the Backend Folder
+   - cd backend
+3. Install Dependencies
+  - Install the necessary dependencies using npm:
+      - npm install
 3. Set Up Database
-Make sure you have SQLite installed. You can initialize the database with the following command (it will create a tasks.db file):
-
-
-node setupDatabase.js
+  Make sure you have SQLite installed. You can initialize the database with the following command (it will create a tasks.db file):
+    node setupDatabase.js
 4. Start the Backend Server
-Once the setup is complete, start the backend server:
+  Once the setup is complete, start the backend server:
 
 
 npm start
