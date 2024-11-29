@@ -32,7 +32,9 @@ Follow these steps to set up the project locally.
 
 - git clone https://github.com/ojasbhosale/Task-Management-System.git
 - cd task-management-app
-- Backend Setup
+
+#### **2. Backend Setup**
+
 - The backend is built using Node.js and SQLite.
 
 1. Navigate to the Backend Folder
@@ -44,69 +46,61 @@ Follow these steps to set up the project locally.
   Make sure you have SQLite installed. You can initialize the database with the following command (it will create a tasks.db file):
     node setupDatabase.js
 4. Start the Backend Server
-  Once the setup is complete, start the backend server:
+   Once the setup is complete, start the backend server:
+      node app.js
+   This will run the backend on http://localhost:5000 by default.
 
+#### **3. Frontend Setup**
 
-npm start
-This will run the backend on http://localhost:5000 by default.
-
-Frontend Setup
 The frontend is built with React.
 
 1. Navigate to the Frontend Folder
-cd frontend
+   cd frontend
 
-3. Install Dependencies
-Install the necessary dependencies using npm:
-
-
-npm install
+2. Install Dependencies
+   Install the necessary dependencies using npm:
+   npm install
 3. Start the React Development Server
-Start the frontend server:
+   Start the frontend server:
+      npm start
+   This will run the frontend on http://localhost:3000 by default.
 
+#### **4. Usage**
 
-npm start
-This will run the frontend on http://localhost:3000 by default.
-
-Usage
 Open the frontend in your browser by visiting http://localhost:3000.
+
 You can:
-Add tasks by filling out the form on the homepage.
-Manage tasks by clicking on the "Manage Tasks" link in the navbar, which shows all tasks in a table.
-Update tasks by editing their title, description, due date, and status.
-Delete tasks by clicking the "Delete" button next to each task.
-Toggle task status between "Pending" and "Completed" using the "Toggle Status" button.
-Optional Demo Video
-To provide a short demo video, you can use any screen recording tool (such as OBS Studio, Loom, or QuickTime Player) to capture your screen while interacting with the app.
+   Add tasks by filling out the form on the homepage.
+   Manage tasks by clicking on the "Manage Tasks" link in the navbar, which shows all tasks in a table.
+   Update tasks by editing their title, description, due date, and status.
+   Delete tasks by clicking the "Delete" button next to each task.
+   Toggle task status between "Pending" and "Completed" using the "Toggle Status" button.
 
-Steps to Record the Demo:
-Start the app locally by following the steps above.
-Record the screen while demonstrating:
-Adding a new task.
-Managing tasks (viewing, editing, and deleting tasks).
-Toggling the task status between Pending and Completed.
-Save and upload the video to a platform like YouTube or Vimeo, and include the link here (if applicable).
-Technologies Used
-Frontend: React, React Router
-Backend: Node.js, Express, SQLite
-State Management: React useState and useEffect
-API Calls: Axios for interacting with the backend API
-Contributing
-Fork the repository.
-Create a new branch:
 
-git checkout -b feature/your-feature-name
-Commit your changes:
+#### **5. Technologies Used**
+   Frontend: React, React Router
+   Backend: Node.js, Express, SQLite
+   State Management: React useState and useEffect
+   API Calls: Axios for interacting with the backend API
 
-git commit -am 'Add a feature'
-Push to the branch:
 
-git push origin feature/your-feature-name
-Open a Pull Request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### **Contributing**
+   Fork the repository.
+   Create a new branch:
+   
+   git checkout -b feature/your-feature-name
+   Commit your changes:
+   
+   git commit -am 'Add a feature'
+   Push to the branch:
+   
+   git push origin feature/your-feature-name
+   Open a Pull Request.
+
+   
+### **License**
+   This project is licensed under the MIT License - see the LICENSE file for details.
 
 This README.md provides a comprehensive guide on setting up the project and understanding its features. You can also optionally include a demo video to showcase the app’s functionality.
-
 Let me know if you need further changes or clarifications! 😊
 
